@@ -1,0 +1,6 @@
+<h1>Your Food</h1>
+
+<%= image_tag @food.source %>
+<p><%= @food.caption %></p>
+<%= link_to "EDIT", edit_food_url(@food.id) %>
+<%= link_to "DELETE", food_url(@food.id), method: "delete" %>

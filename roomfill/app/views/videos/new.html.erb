@@ -1,0 +1,20 @@
+<h1>Add A New Video</h1>
+<%= form_tag videos_url, method: "post" do %>
+
+  <%= label_tag :home_id %>
+  <%= text_field_tag :home_id %>
+
+  <%= label_tag :source %>
+  <%= text_field_tag :source %>
+
+  <%= label_tag :title %>
+  <%= text_field_tag :title %>
+
+<%= label_tag :caption %>
+<%= text_field_tag :caption %>
+
+<%= label_tag :room %>
+<%= text_field_tag :room %>
+
+<%= submit_tag "Add Video" %>
+<% end %>

@@ -1,0 +1,23 @@
+.box {
+  border: 9px #0088CC solid;
+  border-radius: 100px;
+  font-size: xx-large;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.lucky_number {
+  width: 45px;
+}
+
+.sign {
+  width: 180px;
+}
+
+.shadow {
+  -webkit-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    1px 1px 5px rgba(50, 50, 50, 0.75);
+  box-shadow:         1px 1px 5px rgba(50, 50, 50, 0.75);
+}

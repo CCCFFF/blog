@@ -1,0 +1,7 @@
+<h1>Edit Your Car</h1>
+<form action="http://localhost:3000/alter/<%= @carid[:id]%>">
+  <label for="source">Edit The URL</label>
+  <input type="text" id="source" name="source" value="<%= @carid[:source] %>">
+  <label for="caption">Edit The Caption</label>
+  <input type="text" id="caption" name="caption" value="<%= @carid[:caption] %>">
+</form>

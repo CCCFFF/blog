@@ -1,0 +1,13 @@
+<div class="header">
+  <h1>Here is your class:</h1>
+</div>
+
+<div class="list">
+  <ul>
+    <% @studentlist.each do |person| %>
+    <li>
+    <%= "#{person["first_name"]} #{person["last_name"]}" %>
+    <% end %>
+    </li>
+  </ul>
+</div>

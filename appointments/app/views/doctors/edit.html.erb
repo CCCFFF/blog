@@ -1,0 +1,26 @@
+<h1>Editing Doctor #<%= @doctor.id %></h1>
+
+
+<%= form_tag(doctor_url(@doctor), method: 'patch') do %>
+
+  <div>
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name, @doctor.name %>
+  </div>
+
+  <div>
+    <%= label_tag :location %><br />
+    <%= text_field_tag :location, @doctor.location %>
+  </div>
+
+  <div>
+    <%= label_tag :category %><br />
+    <%= text_field_tag :category, @doctor.category %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Doctor" %>
+  </div>
+
+<% end %>

@@ -1,0 +1,12 @@
+<h1>Your Favorite Movies</h1>
+
+<%= link_to "Add A Movie", "http://localhost:3000/movies/new" %>
+
+<ul>
+  <% @movies.each do |pic| %>
+  <li>
+    <%= pic.caption %>
+  </li>
+  <% end %>
+
+</ul>

@@ -1,0 +1,12 @@
+<h1>Edit The Food</h1>
+
+<%= form_tag food_url(@food.id), method: "patch" do %>
+  <%= label_tag :source %>
+  <%= text_field_tag :source, @food.source %>
+
+  <%= label_tag :caption %>
+  <%= text_field_tag :caption, @food.caption %>
+
+  <%= submit_tag "SAVE" %>
+
+  <% end %>

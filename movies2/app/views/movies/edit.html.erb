@@ -1,0 +1,11 @@
+<h1>Change Your Movie</h1>
+
+<%= form_tag "http://localhost:3000/movies/#{@movie.id}", method: "patch" do %>
+<%= label_tag :source %>
+<%= text_field_tag :source, @movie.source %>
+
+<%= label_tag :caption %>
+<%= text_field_tag :caption, @movie.caption %>
+
+<%= submit_tag "Save Your Changes" %>
+<% end %>

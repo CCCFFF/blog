@@ -1,0 +1,14 @@
+<h1>Edit Your Picture</h1>
+
+<p>Your Current Picture</p>
+<img src="<%= @pictureid[:source]%>">
+<p>Your Current Caption</p>
+<p><%= @pictureid[:caption] %></p>
+
+<form action="http://localhost:3000/edit/<%= @pictureid["id"] %>">
+  <label for="source">URL:</label>
+  <input type="text" id="source" name="source" value="<%= @pictureid[:source]%>">
+  <label for="caption">Caption</label>
+  <input type="text" id="caption" name="caption" value="<%= @pictureid[:caption] %> ">
+  <input type="submit" value="EDIT">
+</form>

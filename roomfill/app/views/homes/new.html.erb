@@ -1,0 +1,30 @@
+<h1>Add A New Home</h1>
+
+<%= form_tag homes_url, method: "post" do %>
+
+<%= label_tag :name, "Name Your Home" %>
+<%= text_field_tag :name %>
+
+<%= label_tag :room_a, "Kitchen" %>
+<%= text_field_tag :room_a, "Kitchen" %>
+
+<%= label_tag :room_b, "Living Room" %>
+<%= text_field_tag :room_b, "Living Room" %>
+
+<%= label_tag :room_c, "Family Room" %>
+<%= text_field_tag :room_c, "Family Room" %>
+
+<%= label_tag :room_d, "Master Bedroom" %>
+<%= text_field_tag :room_d, "Master Bedroom" %>
+
+<%= label_tag :room_e, "Office" %>
+<%= text_field_tag :room_e, "Office" %>
+
+<%= label_tag :room_f, "Spare Bedroom" %>
+<%= text_field_tag :room_f, "Spare Bedroom" %>
+
+<%= label_tag :room_g, "Playroom" %>
+<%= text_field_tag :room_g, "Playroom" %>
+
+<%= submit_tag "Add The House" %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Here Is The List Of Cars</h1>
+
+<ul>
+  <% @cars.each do |car| %>
+  <li>
+    <a href="http://localhost:3000/show/<%=car[:id] %>"><%= car[:caption] %></a>
+    <% end %>
+      </li>
+
+
+</ul>

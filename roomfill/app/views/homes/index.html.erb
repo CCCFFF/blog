@@ -1,0 +1,10 @@
+<h1>List of Homes</h1>
+<div>
+  <ul>
+    <% @homes.each do |home| %>
+    <li>
+      <%= home.name %> <%= home.id %>
+    </li>
+    <% end %>
+  </ul>
+</div>

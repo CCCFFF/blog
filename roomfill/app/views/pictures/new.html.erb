@@ -1,0 +1,19 @@
+<h1>Add A Picture</h1>
+<%= form_tag pictures_url, method: "post" do %>
+  <%= label_tag :home_id, "Home ID" %>
+  <%= text_field_tag :home_id %>
+
+  <%= label_tag :source %>
+  <%= text_field_tag :source %>
+
+  <%= label_tag :title %>
+  <%= text_field_tag :title %>
+
+<%= label_tag :caption %>
+<%= text_field_tag :caption %>
+
+<%= label_tag :room %>
+<%= text_field_tag :room %>
+
+<%= submit_tag "Add Picture" %>
+<% end %>

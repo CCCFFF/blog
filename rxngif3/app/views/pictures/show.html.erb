@@ -1,0 +1,12 @@
+<h1>Your Selected Picture</h1>
+
+<img src="<%= @pictureid[:source]%>">
+<p><%= @pictureid[:caption] %></p>
+
+<form action="http://localhost:3000/alter_pic/<%= @pictureid["id"] %>">
+  <input type="submit" value="EDIT">
+</form>
+
+<form action="http://localhost:3000/delete/<%= @pictureid["id"] %>">
+  <input type="submit" value="DELETE">
+</form>

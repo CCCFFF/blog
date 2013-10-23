@@ -1,0 +1,15 @@
+<h1>Individual Home</h1>
+<div>
+  <%= @home.name %>
+</div>
+<div>
+  <%= @home.room_a %>
+</div>
+<div>
+  <%= @home.room_b %>
+</div>
+<div>
+  <%= @home.room_c %>
+</div>
+<%= link_to "DELETE", home_url, method: "delete" %>
+<%= link_to "EDIT", edit_home_url %>

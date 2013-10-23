@@ -1,0 +1,26 @@
+<h1>New Insurance</h1>
+
+
+<%= form_tag(insurances_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name %>
+  </div>
+
+  <div>
+    <%= label_tag :category %><br />
+    <%= text_field_tag :category %>
+  </div>
+
+  <div>
+    <%= label_tag :copay %><br />
+    <%= text_field_tag :copay %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create Insurance" %>
+  </div>
+<% end %>

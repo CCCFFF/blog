@@ -1,0 +1,31 @@
+<h1>New Appointment</h1>
+
+
+<%= form_tag(appointments_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :time %><br />
+    <%= text_field_tag :time %>
+  </div>
+
+  <div>
+    <%= label_tag :category %><br />
+    <%= text_field_tag :category %>
+  </div>
+
+  <div>
+    <%= label_tag :patient_id %><br />
+    <%= select_tag :patient_id, options_from_collection_for_select(Patient.all.order("name ASC"), :id, :name) %>
+  </div>
+
+  <div>
+    <%= label_tag :doctor_id %><br />
+    <%= select_tag :doctor_id, options_from_collection_for_select(Doctor.all.order("name ASC"), :id, :name) %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create Appointment" %>
+  </div>
+<% end %>

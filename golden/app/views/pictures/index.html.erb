@@ -1,0 +1,14 @@
+<h1>All Of The Pictures</h1>
+
+<form action="http://localhost:3000/pictures/new">
+<input type="submit" value="Add Pictures">
+</form>
+
+<ul>
+  <% @pictures.each do |pic| %>
+  <li>
+    <a href="http://localhost:3000/pictures/show/<%= @pictures.index(pic) %>"><%= pic[:caption] %></a>
+  </li>
+  <% end %>
+
+</ul>

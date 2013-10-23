@@ -1,0 +1,10 @@
+<h1>Your Selected Vegetable</h1>
+
+<%= image_tag @veggie.source %>
+<p><%= @veggie.caption %></p>
+
+<nav>
+  <%= link_to "EDIT", "http://localhost:3000/veggies/#{@veggie.id}/edit" %>
+  <%= link_to "DELETE", "http://localhost:3000/veggies/#{@veggie.id}", method: "delete" %>
+
+</nav>

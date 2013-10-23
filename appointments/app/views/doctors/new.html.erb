@@ -1,0 +1,26 @@
+<h1>New Doctor</h1>
+
+
+<%= form_tag(doctors_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name %>
+  </div>
+
+  <div>
+    <%= label_tag :location %><br />
+    <%= text_field_tag :location %>
+  </div>
+
+  <div>
+    <%= label_tag :category %><br />
+    <%= text_field_tag :category %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create Doctor" %>
+  </div>
+<% end %>

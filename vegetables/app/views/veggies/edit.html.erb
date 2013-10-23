@@ -1,0 +1,12 @@
+<h1>Change the Information</h1>
+
+<%= form_tag "http://localhost:3000/veggies/#{@veggie.id}", method: "patch" do %>
+ <%= label_tag :source %>
+ <%= text_field_tag :source, @veggie.source %>
+
+ <%= label_tag :caption %>
+ <%= text_field_tag :caption, @veggie.caption %>
+
+ <%= submit_tag "SAVE"%>
+
+<% end %>

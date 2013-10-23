@@ -1,0 +1,11 @@
+<h1>Edit The Car Profile</h1>
+
+<%= form_tag "http://localhost:3000/cars/#{@car.id}", method: "patch" do %>
+  <%= label_tag :source, "Source URL:" %>
+  <%= text_field_tag :source, @car.source %>
+
+  <%= label_tag :caption, "Caption" %>
+  <%= text_field_tag :caption, @car.caption %>
+
+  <%= submit_tag "SAVE CHANGES" %>
+  <% end %>

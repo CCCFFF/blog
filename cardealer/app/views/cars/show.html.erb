@@ -1,0 +1,7 @@
+<h1>Take It For A Test Drive</h1>
+<%= image_tag @car.source %>
+<p><%= @car.caption %></p>
+<nav>
+  <%= link_to "EDIT", "http://localhost:3000/cars/#{@car.id}/edit" %>
+  <%= link_to "DELETE", "http://localhost:3000/cars/#{@car.id}", method: "delete" %>
+</nav>

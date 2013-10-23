@@ -1,0 +1,22 @@
+<div class="row span 12">
+<div class="header">
+  <div class="page-header">
+<h1>Your Lucky Numbers Are</h1>
+</div>
+<div>
+</div>
+
+<div class="row span12">
+<div class="header">
+  <div class="page-header">
+<ul class="inline">
+  <% @lucky_numbers.each do |num| %>
+  <li class="lucky_number box text-center shadow">
+    <%= num %>
+  </li>
+  <% end %>
+</ul>
+</div>
+<a href="/horoscopes">Get Your Horoscope</a>
+<div>
+</div>

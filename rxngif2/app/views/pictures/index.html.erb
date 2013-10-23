@@ -1,0 +1,11 @@
+ <h1>Your List of Pictures</h1>
+
+<ul>
+  <% @picture.each do |pic| %>
+  <li>
+  <a href="http://localhost:3000/pictures/<%= @picture.index(pic) %>"><%= pic[:caption] %>
+  </a>
+  <% end %>
+</li>
+
+</ul>

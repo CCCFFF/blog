@@ -1,0 +1,20 @@
+<h1>Update A Picture</h1>
+<%= form_tag picture_url, method: "patch" do %>
+
+  <%= label_tag :home_id, "Home ID" %>
+  <%= text_field_tag :home_id, @picture.home_id %>
+
+  <%= label_tag :source %>
+  <%= text_field_tag :source, @picture.source %>
+
+  <%= label_tag :title %>
+  <%= text_field_tag :title, @picture.title %>
+
+<%= label_tag :caption %>
+<%= text_field_tag :caption, @picture.caption %>
+
+<%= label_tag :room %>
+<%= text_field_tag :room, @picture.room %>
+
+<%= submit_tag "Edit Picture" %>
+<% end %>

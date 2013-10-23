@@ -1,0 +1,13 @@
+<h1>Add A New Movie</h1>
+
+<%= form_tag "http://localhost:3000/movies", method: "post" do %>
+
+<%= label_tag :source %>
+<%= text_field_tag :source %>
+
+<%= label_tag :caption %>
+<%= text_field_tag :caption %>
+
+<%= submit_tag "Save" %>
+
+<% end %>

@@ -1,0 +1,36 @@
+<h1>Appointments</h1>
+
+<p><%= link_to 'Add a New Appointment', new_appointment_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Category</th>
+      <th>Category</th>
+      <th>Patient</th>
+      <th>Doctor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @appointments.each do |appointment| %>
+    <tr>
+      <td><%= appointment.time %></td>
+      <td><%= appointment.category %></td>
+      <td><%= appointment.category %></td>
+      <td><%= appointment.patient_id %></td>
+      <td><%= appointment.doctor_id %></td>
+  
+      <td><%= link_to 'Show', appointment_url(appointment) %></td>
+      <td><%= link_to 'Edit', edit_appointment_url(appointment) %></td>
+      <td><%= link_to 'Destroy', appointment_url(appointment), method: 'delete', data: { confirm: "Do you really want to delete this appointment?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

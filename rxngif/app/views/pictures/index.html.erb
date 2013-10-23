@@ -1,0 +1,14 @@
+<h1>Your Pictures</h1>
+
+<h1>List of Pictures</h1>
+
+<ul>
+  <% @pictures.each do |picture| %>
+    <li>
+      <%= link_to(picture.caption, "http://localhost:3000/pictures/#{picture.id}") %>
+<!--       <a href="http://localhost:3000/pictures/<%= @pictures.index(picture) %>">
+        <%= picture[:caption] %>
+      </a> -->
+    </li>
+  <% end %>
+</ul>

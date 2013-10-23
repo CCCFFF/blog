@@ -1,0 +1,36 @@
+<h1>Editing Appointment #<%= @appointment.id %></h1>
+
+
+<%= form_tag(appointment_url(@appointment), method: 'patch') do %>
+
+  <div>
+    <%= label_tag :time %><br />
+    <%= text_field_tag :time, @appointment.time %>
+  </div>
+
+  <div>
+    <%= label_tag :category %><br />
+    <%= text_field_tag :category, @appointment.category %>
+  </div>
+
+  <div>
+    <%= label_tag :category %><br />
+    <%= text_field_tag :category, @appointment.category %>
+  </div>
+
+  <div>
+    <%= label_tag :patient_id %><br />
+    <%= text_field_tag :patient_id, @appointment.patient_id %>
+  </div>
+
+  <div>
+    <%= label_tag :doctor_id %><br />
+    <%= text_field_tag :doctor_id, @appointment.doctor_id %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Appointment" %>
+  </div>
+
+<% end %>

@@ -1,0 +1,30 @@
+<h1>Edit The Home</h1>
+
+<%= form_tag home_url, method: "patch" do %>
+
+<%= label_tag :name, "Name Your Home" %>
+<%= text_field_tag :name %>
+
+<%= label_tag :room_a, "Kitchen" %>
+<%= text_field_tag :room_a, @home.room_a %>
+
+<%= label_tag :room_b, "Living Room" %>
+<%= text_field_tag :room_b, @home.room_b %>
+
+<%= label_tag :room_c, "Family Room" %>
+<%= text_field_tag :room_c, @home.room_c %>
+
+<%= label_tag :room_d, "Master Bedroom" %>
+<%= text_field_tag :room_d, @home.room_d %>
+
+<%= label_tag :room_e, "Office" %>
+<%= text_field_tag :room_e, @home.room_e %>
+
+<%= label_tag :room_f, "Spare Bedroom" %>
+<%= text_field_tag :room_f, @home.room_f %>
+
+<%= label_tag :room_g, "Playroom" %>
+<%= text_field_tag :room_g, @home.room_g %>
+
+<%= submit_tag "Add The House" %>
+<% end %>

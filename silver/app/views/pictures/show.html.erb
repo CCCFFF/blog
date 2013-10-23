@@ -1,0 +1,12 @@
+<h1>This Is The Picture</h1>
+
+<img src="<%=@picture.source%>">
+<p><%= @picture.caption %></p>
+
+
+<form action="http://localhost:3000/pictures/delete/<%= @picture.id %>">
+  <input type="submit" value="DELETE">
+</form>
+<form action="http://localhost:3000/pictures/edit/<%= @picture.id %>">
+  <input type="submit" value="EDIT">
+</form>

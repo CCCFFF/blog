@@ -1,0 +1,12 @@
+<h1>Your List Of Foods</h1>
+
+<%= link_to "Add New", "http://localhost:3000/foods/new" %>
+
+<ul>
+  <% @foods.each do |f|  %>
+  <li>
+    <%= f.caption %>
+  </li>
+  <% end %>
+
+</ul>

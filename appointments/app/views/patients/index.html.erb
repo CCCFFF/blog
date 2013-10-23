@@ -1,0 +1,38 @@
+<h1>Patients</h1>
+
+<p><%= link_to 'Add a New Patient', new_patient_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Health</th>
+      <th>Location</th>
+      <th>Insurance</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @patients.each do |patient| %>
+    <tr>
+      <td><%= patient.name %></td>
+      <td><%= patient.gender %></td>
+      <td><%= patient.age %></td>
+      <td><%= patient.health %></td>
+      <td><%= patient.location %></td>
+      <td><%= patient.insurance_id %></td>
+  
+      <td><%= link_to 'Show', patient_url(patient) %></td>
+      <td><%= link_to 'Edit', edit_patient_url(patient) %></td>
+      <td><%= link_to 'Destroy', patient_url(patient), method: 'delete', data: { confirm: "Do you really want to delete this patient?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

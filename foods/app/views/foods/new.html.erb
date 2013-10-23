@@ -1,0 +1,11 @@
+<h1>Add New Food</h1>
+<%= form_tag foods_url, method: "post" do %>
+  <%= label_tag :source %>
+  <%= text_field_tag :source %>
+
+  <%= label_tag :caption %>
+  <%= text_field_tag :caption %>
+
+  <%= submit_tag "SAVE" %>
+
+<% end %>

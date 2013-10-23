@@ -1,0 +1,12 @@
+<h1>The Dealership</h1>
+
+<a href="http://localhost:3000/cars/new">Add A Car To The Lot</a>
+<ul>
+<% @cars.each do |auto| %>
+<li>
+  <%= image_tag auto.source %>
+  <a href="http://localhost:3000/cars/<%= auto.id %>"><%= auto.caption %></a>
+  </li>
+  <% end %>
+</ul>
+

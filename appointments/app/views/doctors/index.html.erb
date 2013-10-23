@@ -1,0 +1,32 @@
+<h1>Doctors</h1>
+
+<p><%= link_to 'Add a New Doctor', new_doctor_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Category</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @doctors.each do |doctor| %>
+    <tr>
+      <td><%= doctor.name %></td>
+      <td><%= doctor.location %></td>
+      <td><%= doctor.category %></td>
+  
+      <td><%= link_to 'Show', doctor_url(doctor) %></td>
+      <td><%= link_to 'Edit', edit_doctor_url(doctor) %></td>
+      <td><%= link_to 'Destroy', doctor_url(doctor), method: 'delete', data: { confirm: "Do you really want to delete this doctor?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

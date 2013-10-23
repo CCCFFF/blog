@@ -1,0 +1,26 @@
+<h1>Editing Insurance #<%= @insurance.id %></h1>
+
+
+<%= form_tag(insurance_url(@insurance), method: 'patch') do %>
+
+  <div>
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name, @insurance.name %>
+  </div>
+
+  <div>
+    <%= label_tag :category %><br />
+    <%= text_field_tag :category, @insurance.category %>
+  </div>
+
+  <div>
+    <%= label_tag :copay %><br />
+    <%= text_field_tag :copay, @insurance.copay %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Insurance" %>
+  </div>
+
+<% end %>

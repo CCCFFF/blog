@@ -1,0 +1,32 @@
+<h1>Insurances</h1>
+
+<p><%= link_to 'Add a New Insurance', new_insurance_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Copay</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @insurances.each do |insurance| %>
+    <tr>
+      <td><%= insurance.name %></td>
+      <td><%= insurance.category %></td>
+      <td><%= insurance.copay %></td>
+  
+      <td><%= link_to 'Show', insurance_url(insurance) %></td>
+      <td><%= link_to 'Edit', edit_insurance_url(insurance) %></td>
+      <td><%= link_to 'Destroy', insurance_url(insurance), method: 'delete', data: { confirm: "Do you really want to delete this insurance?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

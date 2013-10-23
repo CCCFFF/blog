@@ -1,0 +1,16 @@
+<h1>Your Favorite Movies</h1>
+<a href="http://localhost:3000/movies/new">Add A New Movie</a>
+
+<ul>
+  <% @movies.each do |pic| %>
+
+  <li>
+  <%= pic.caption %>
+  <nav>
+    <%= link_to "Show", "http://localhost:3000/movies/#{pic.id}" %>
+    <%= link_to "Edit", "http://localhost:3000/movies/#{pic.id}/edit" %>
+    <%= link_to "Delete", "http://localhost:3000/movies/#{pic.id}", method: "delete" %>
+  </nav>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,19 @@
+<h1>Update The Video</h1>
+<%= form_tag videos_url, method: "patch" do %>
+  <%= label_tag :home_id, "Home ID" %>
+  <%= text_field_tag :home_id, @video.home_id %>
+
+  <%= label_tag :source %>
+  <%= text_field_tag :source, @video.source %>
+
+  <%= label_tag :title %>
+  <%= text_field_tag :title, @video.title %>
+
+<%= label_tag :caption %>
+<%= text_field_tag :caption, @video.caption %>
+
+<%= label_tag :room %>
+<%= text_field_tag :room, @video.room %>
+
+<%= submit_tag "Update Video" %>
+<% end %>

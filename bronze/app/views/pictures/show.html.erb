@@ -1,0 +1,7 @@
+<h1>Here Is Your Picture</h1>
+
+<img src="<%= @picture.source %>">
+<p><%= @picture.caption %></p>
+
+<a href="http://localhost:3000/pictures/edit/<%= @picture.id %>">EDIT</a>
+<a href="http://localhost:3000/pictures/delete/<%= @picture.id %>">DELETE</a>

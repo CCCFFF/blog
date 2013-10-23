@@ -1,0 +1,9 @@
+<h1>Your Selected Movie</h1>
+
+<%= image_tag @movie.source %>
+<p><%= @movie.caption %></p>
+
+<nav>
+  <%= link_to "Edit", "http://localhost:3000/movies/#{@movie.id}/edit" %>
+  <%= link_to "Delete", "http://localhost:3000/movies/#{@movie.id}", method: "delete" %>
+</nav>

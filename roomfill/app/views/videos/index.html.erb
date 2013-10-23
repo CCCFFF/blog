@@ -1,0 +1,12 @@
+<h1>List of Videos</h1>
+
+<ul>
+  <% @videos.each do |vid| %>
+  <li>
+    <%= video_tag vid.source %>
+    <%= vid.title %>
+    <%= vid.caption %>
+  </li>
+  <% end %>
+
+</ul>

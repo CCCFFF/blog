@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="span12">
+    <div class="page-header">
+      <h1>
+        Horoscopes
+        <small><%= Date.today.strftime("%A, %B %e") %></small>
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <ul class="inline">
+      <% @horoscopes.each do |h| %>
+        <li class="sign box text-center shadow">
+          <a href="http://localhost:3000/horoscopes/<%= h[:sign] %>">
+            <%= h[:sign].capitalize %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

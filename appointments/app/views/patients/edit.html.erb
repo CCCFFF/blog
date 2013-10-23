@@ -1,0 +1,45 @@
+<h1>Editing Patient #<%= @patient.id %></h1>
+
+
+<%= form_tag(patient_url(@patient), method: 'patch') do %>
+
+  <div>
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name, @patient.name %>
+  </div>
+
+  <div>
+    <%= label_tag :gender %><br />
+    <%= text_field_tag :gender, @patient.gender %>
+  </div>
+
+  <div>
+    <%= label_tag :age %><br />
+    <%= text_field_tag :age, @patient.age %>
+  </div>
+
+  <div>
+    <%= label_tag :health %><br />
+    <%= text_field_tag :health, @patient.health %>
+  </div>
+
+  <div>
+    <%= label_tag :location %><br />
+    <%= text_field_tag :location, @patient.location %>
+  </div>
+
+  <!-- <div>
+    <%= label_tag :insurance_id %><br />
+    <%= text_field_tag :insurance_id, @patient.insurance_id %>
+  </div>
+ -->
+  <div>
+    <%= label_tag :insurance_id %><br/>
+    <%= select_tag :insurance_id, options_from_collection_for_select(Insurance.all, :id, :name) %>
+  </div>
+
+  <div>
+    <%= submit_tag "Update Patient" %>
+  </div>
+
+<% end %>

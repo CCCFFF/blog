@@ -1,0 +1,11 @@
+<h1>Veggie List</h1>
+<%= link_to "ADD NEW", "http://localhost:3000/veggies/new" %>
+
+<ul>
+  <% @veggies.each do |veg| %>
+<li>
+  <%= image_tag veg.source %>
+  <%= veg.caption %>
+</li>
+  <% end %>
+</ul>

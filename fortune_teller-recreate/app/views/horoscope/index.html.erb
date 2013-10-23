@@ -1,0 +1,14 @@
+<div class="header span12">
+  <h1>Choose Your Sign</h1>
+</div>
+<div class="buttons span12">
+  <ul>
+      <% @horoscope.each do |h| %>
+      <li>
+        <a href="localhost:3000/horoscopes/<%= h[:sign] %>">
+          <%= h[:sign].capitalize %>
+        </a>
+         </li>
+        <% end %>
+  </ul>
+</div>
