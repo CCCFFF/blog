@@ -1,10 +1,12 @@
 Blog::Application.routes.draw do
   root 'home#index'
+  get '/updates' => 'updates#index', as: 'updates'
+    resources :posts
+  end
   get '/firm' => 'firm#index', as: 'firm'
   get '/services' => 'services#index', as: 'services'
   get '/home' => 'home#index', as: 'home'
   devise_for :users
-  resources :posts
   root "welcome#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
