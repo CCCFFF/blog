@@ -1,10 +1,12 @@
 Blog::Application.routes.draw do
-  root 'home#index'
+
+  resources :testimonials
+
   get '/contact_us' => 'contact_us#index', as: "contact_us"
   get '/faqs' => 'faqs#index', as: 'faqs'
   get '/updates' => 'updates#index', as: 'updates'
-    resources :posts
-  end
+  resources :posts
+
   get '/firm' => 'firm#index', as: 'firm'
   get '/services' => 'services#index', as: 'services'
   get '/home' => 'home#index', as: 'home'
