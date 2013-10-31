@@ -1,5 +1,6 @@
 Blog::Application.routes.draw do
   root 'home#index'
+  get '/firm' => 'firm#index', as: 'firm'
   get '/services' => 'services#index', as: 'services'
   get '/home' => 'home#index', as: 'home'
   devise_for :users
