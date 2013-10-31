@@ -1,6 +1,8 @@
 Blog::Application.routes.draw do
+  root 'home#index'
+
+  get '/home' => 'home#index', as: 'home'
   devise_for :users
-  resources :pages
   resources :posts
   root "welcome#index"
 
