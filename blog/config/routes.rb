@@ -12,7 +12,7 @@ Blog::Application.routes.draw do
   get '/services' => 'services#index', as: 'services'
   get '/home' => 'home#index', as: 'home'
   devise_for :users
-  root "welcome#index"
+  root "home#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
