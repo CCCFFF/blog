@@ -1,7 +1,8 @@
 Blog::Application.routes.draw do
 
   resources :testimonials
-
+  get '/terms_of_use' => 'terms#index', as: 'terms_of_use'
+  get '/privacy_policy' => 'privacy#index', as: 'privacy'
   get '/contact_us' => 'contact_us#index', as: "contact_us"
   get '/faqs' => 'faqs#index', as: 'faqs'
   get '/updates' => 'updates#index', as: 'updates'
