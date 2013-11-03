@@ -1,5 +1,7 @@
 Blog::Application.routes.draw do
 
+get 'contact' => 'contact#new', :as => 'contact'
+post 'contact' => 'contact#create'
   resources :testimonials
   get '/terms_of_use' => 'terms#index', as: 'terms_of_use'
   get '/privacy_policy' => 'privacy#index', as: 'privacy'
