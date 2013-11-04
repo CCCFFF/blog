@@ -15,10 +15,33 @@
   background-color: #F8F8F8;
   border-color: #000000;
   border-style: solid;
-  padding-right: 5px;
   height: 300px;
 
 }
 .contact  h1 {
+  text-align: center;
+}
+
+.faq {
+  background-color: #F8F8F8;
+  border-color: #000000;
+  border-style: solid;
+  padding: 15px;
+}
+.faq h2 {
+  font-size: 18px;
+  font-style: bold;
+}
+.faq p {
+  font-size: 14px;
+}
+.faqbottom {
+  font-size: 20px;
+  font-style: bold;
+  text-align: center;
+}
+.faqbottomnumber {
+  font-size: 24px;
+  font-style: bold;
   text-align: center;
 }
