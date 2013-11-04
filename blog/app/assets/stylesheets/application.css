@@ -11,3 +11,14 @@
  *= require_self
  *= require_tree .
  */
+.contact {
+  background-color: #F8F8F8;
+  border-color: #000000;
+  border-style: solid;
+  padding-right: 5px;
+  height: 300px;
+
+}
+.contact  h1 {
+  text-align: center;
+}
