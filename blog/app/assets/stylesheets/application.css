@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
-.masthead{
+.masthead {
   background-color: #B8B8B8;
 }
  .backgroundcolor {
@@ -97,10 +97,11 @@
   height: 180px;
 }
 .servicescolumn1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
   height: 650px;
   padding: 5px;
   border-style: solid;
-  font-weight: bold;
   background-color: #F8F8F8;
 }
 .servicescolumn1 h1 {
@@ -115,6 +116,8 @@
   font-size: 16px;
 }
 .servicescolumn2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
   height: 650px;
   padding: 5px;
   border-style: solid;
@@ -132,5 +135,11 @@
   font-size: 16px;
 }
 .footerbottom {
+  margin-top: 10px;
   background-color:  #B8B8B8;
+  text-align: center;
+  border-top: solid;
+}
+.social_media {
+  display: inline;
 }

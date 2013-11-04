@@ -11,15 +11,25 @@
 <body>
   <div class="masthead">
     <div class="container">
-      <div class="logo col-xs-6 col-md-4">
+      <div class="logo col-xs-6 col-sm-4">
       <%= image_tag asset_url("highresolutionlogo.png"), alt: "Tax Relief", size: "296x83" %>
     </div>
-    <div class="slogan col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-2">
-      <h3><strong>Your Tax Relief Partner<br>Call 877.881.1040</strong></h3>
-      <!-- Button trigger modal -->
-<button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+    <div class="slogan col-xs-8 col-xs-offset-4 col-sm-4 col-sm-offset-2">
+      <h3><strong>Your Tax Relief Partner Call 877.881.1040</strong></h3>
+      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
   Email Us Now
 </button>
+      <div class="social_media">
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="TaxReliefIncIl">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+<!-- Place this tag after the last +1 button tag. -->
+
+</div>
+      <!-- Button trigger modal -->
+
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -27,27 +37,27 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
       </div>
       <div class="modal-body">
         <%= form_for Message.new, :url => contact_path do |form| %>
   <fieldset class="fields">
     <div class="field">
-      <%= form.label :name %>
+      <%= form.label :name %><br>
       <%= form.text_field :name %>
     </div>
 
     <div class="field">
-      <%= form.label :email %>
+      <%= form.label :email %><br>
       <%= form.text_field :email %>
     </div>
     <div class="field">
-      <%= form.label :subject %>
+      <%= form.label :subject %><br>
       <%= form.text_field :subject %>
     </div>
 
     <div class="field">
-      <%= form.label :body %>
+      <%= form.label :body %><br>
       <%= form.text_area :body %>
     </div>
   </fieldset>
@@ -98,10 +108,10 @@
 <%= yield %>
 </div>
 <div class="footerbottom">
-  <h1>Footer</h1>
-  <%= link_to "Sign In", new_user_session_path  %>
-  <%= link_to "Privacy Policy", privacy_path %>
-  <%= link_to "Terms of Use", terms_of_use_path %>
+  <div class ="container">
+  <h3>&#169 2014 Tax Relief Inc.<br> Call 877.881.1040</h3>
+  <%= link_to "Sign In", new_user_session_path  %> <%= link_to "Privacy Policy", privacy_path %> <%= link_to "Terms of Use", terms_of_use_path %>
+</div>
   </div>
 </body>
 </html>
