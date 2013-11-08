@@ -143,3 +143,33 @@
 .social_media {
   display: inline;
 }
+#testimonialcolumn {
+
+}
+#testimonialcolumn h1 {
+  text-align: center;
+  font-size: 20px;
+}
+#testimonialcolumn p {
+  font-size: 16px;
+}
+.jason {
+  width: 72px;
+  height: 90px;
+}
+.megan {
+  width: 90px;
+  height: 92px;
+}
+.craig {
+  width: 90px;
+  height: 84px;
+}
+.rosa {
+  width: 86px;
+  height: 90px;
+}
+.ray {
+  width: 73px;
+  height: 82px;
+}
